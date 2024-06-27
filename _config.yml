@@ -1,5 +1,4 @@
 theme: minima
-## Force rebuild again
 
 # Site settings
 title: Mohammed Hamdan's AI Blog
@@ -39,3 +38,4 @@ nav_links:
 
 # Permalink structure
 permalink: /:categories/:year/:month/:day/:title.html
+
