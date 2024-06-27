@@ -22,11 +22,11 @@ plugins:
 # Navigation links
 nav_links:
   - title: "Home"
-    url: "/moha/"
+    url: "/"
   - title: "Posts"
-    url: "/moha/posts/"
+    url: "/posts/"
   - title: "About"
-    url: "/moha/about/"
+    url: "/about/"
   - title: "GitHub"
     url: "https://github.com/MHHamdan"
   - title: "LinkedIn"
@@ -38,4 +38,3 @@ nav_links:
 
 # Permalink structure
 permalink: /:categories/:year/:month/:day/:title.html
-
