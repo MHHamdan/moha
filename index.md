@@ -1,0 +1,6 @@
+---
+layout: home
+title: "Home"
+---
+
+Welcome to my personal blog where I share my journey in AI, Machine Learning, and Computer Vision. Stay tuned for daily updates and insights!

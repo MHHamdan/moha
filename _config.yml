@@ -1,0 +1,40 @@
+theme: minima
+
+# Site settings
+title: Mohammed Hamdan's AI Blog
+email: mh2022ets@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  A blog about AI, Machine Learning, and Computer Vision.
+baseurl: "/moha" # the subpath of your site, e.g. /blog
+url: "https://MHHamdan.github.io" # the base hostname & protocol for your site
+
+# Social settings
+twitter_username: Mohamme22877190
+github_username: MHHamdan
+
+# Build settings
+markdown: kramdown
+
+# Plugins
+plugins:
+  - jekyll-feed
+
+# Navigation links
+nav_links:
+  - title: "Home"
+    url: "/moha/"
+  - title: "Posts"
+    url: "/moha/posts/"
+  - title: "About"
+    url: "/moha/about/"
+  - title: "GitHub"
+    url: "https://github.com/MHHamdan"
+  - title: "LinkedIn"
+    url: "https://www.linkedin.com/in/mohammed-hamdan-b4545316a/"
+  - title: "X"
+    url: "https://x.com/Mohamme22877190"
+  - title: "Medium"
+    url: "https://mh-hamdan.medium.com/"
+
+# Permalink structure
+permalink: /:categories/:year/:month/:day/:title.html
