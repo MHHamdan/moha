@@ -14,4 +14,3 @@ permalink: /posts/
   </div>
   <hr>
 {% endfor %}
-
