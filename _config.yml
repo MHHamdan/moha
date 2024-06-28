@@ -7,6 +7,7 @@ description: > # this means to ignore newlines until "baseurl:"
   A blog about AI, Machine Learning, and Computer Vision.
 baseurl: "/moha" # the subpath of your site, e.g. /blog
 url: "https://MHHamdan.github.io" # the base hostname & protocol for your site
+future: true
 
 # Social settings
 twitter_username: Mohamme22877190

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4001/moha/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4001/moha/" rel="alternate" type="text/html" /><updated>2024-06-27T21:51:19-04:00</updated><id>http://localhost:4001/moha/feed.xml</id><title type="html">Mohammed Hamdan’s AI Blog</title><subtitle>A blog about AI, Machine Learning, and Computer Vision.
+</subtitle><entry><title type="html">My First Blog Post</title><link href="http://localhost:4001/moha/blog/2024/06/28/first-post.html" rel="alternate" type="text/html" title="My First Blog Post" /><published>2024-06-28T08:00:00-04:00</published><updated>2024-06-28T08:00:00-04:00</updated><id>http://localhost:4001/moha/blog/2024/06/28/first-post</id><content type="html" xml:base="http://localhost:4001/moha/blog/2024/06/28/first-post.html"><![CDATA[<p>Welcome .^. to my first blog post! This is where I will share my journey in AI, Machine Learning, and Computer Vision. Stay tuned for more updates and insights!</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>In this blog, I will discuss various topics related to AI, Machine Learning, and Computer Vision. I aim to provide valuable content for both beginners and experts in the field.</p>
+
+<h2 id="topics-to-cover">Topics to Cover</h2>
+
+<ul>
+  <li>AI fundamentals</li>
+  <li>Machine Learning algorithms</li>
+  <li>Computer Vision techniques</li>
+  <li>Latest research and advancements</li>
+</ul>
+
+<p>Thank you for visiting my blog. Feel free to reach out through my social media links provided in the navigation bar.</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[Welcome .^. to my first blog post! This is where I will share my journey in AI, Machine Learning, and Computer Vision. Stay tuned for more updates and insights!]]></summary></entry><entry><title type="html">Test Post</title><link href="http://localhost:4001/moha/testing/2024/06/28/test-post.html" rel="alternate" type="text/html" title="Test Post" /><published>2024-06-28T08:00:00-04:00</published><updated>2024-06-28T08:00:00-04:00</updated><id>http://localhost:4001/moha/testing/2024/06/28/test-post</id><content type="html" xml:base="http://localhost:4001/moha/testing/2024/06/28/test-post.html"><![CDATA[<p>This is a test post to debug the issue with blog posts not appearing on the GitHub Pages site.</p>
+
+<h2 id="heading">Heading</h2>
+
+<p>This is a sample paragraph to ensure that the content is being rendered correctly.</p>]]></content><author><name></name></author><category term="testing" /><summary type="html"><![CDATA[This is a test post to debug the issue with blog posts not appearing on the GitHub Pages site.]]></summary></entry></feed>
