@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>{{ site.title }}</title>
+  <title>{{ page.title }} - {{ site.title }}</title>
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
 </head>
 <body>
@@ -17,7 +17,15 @@
     </nav>
   </header>
   <main>
-    {{ content }}
+    <div class="posts">
+      <div class="post">
+        <h1>{{ page.title }}</h1>
+        <p class="post-date"><small><i>{{ page.date | date_to_string }}</i></small></p>
+        <div class="post-content">
+          {{ content }}
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
     <p>© 2024 {{ site.title }}</p>
