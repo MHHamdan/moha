@@ -7,7 +7,6 @@ description: > # this means to ignore newlines until "baseurl:"
   A blog about AI, Machine Learning, and Computer Vision.
 baseurl: "/moha" # the subpath of your site, e.g. /blog
 url: "https://MHHamdan.github.io" # the base hostname & protocol for your site
-future: true
 
 # Social settings
 twitter_username: Mohamme22877190
@@ -39,3 +38,19 @@ nav_links:
 
 # Permalink structure
 permalink: /:categories/:year/:month/:day/:title.html
+
+# Categories
+categories:
+  - Machine Learning
+  - Deep Learning
+  - Natural Language Processing
+  - Computer Vision
+  - Reinforcement Learning
+  - Data Science
+  - Neural Networks
+  - Calculus/Optimization
+  - AI Ethics
+  - AI in Healthcare
+  - AI in Finance
+  - Robotics
+
