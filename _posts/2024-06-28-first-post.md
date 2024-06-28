@@ -2,10 +2,10 @@
 layout: post
 title: "My First Blog Post"
 date: 2024-06-28 12:00:00
-categories: blog
+categories: Calculus/Optimization
 ---
 
-Welcome .^. to my first blog post! This is where I will share my journey in AI, Machine Learning, and Computer Vision. Stay tuned for more updates and insights!
+Welcome to my first blog post! This is where I will share my journey in AI, Machine Learning, and Computer Vision. Stay tuned for more updates and insights!
 
 ## Introduction
 
