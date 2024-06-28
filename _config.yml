@@ -22,11 +22,11 @@ plugins:
 # Navigation links
 nav_links:
   - title: "Home"
-    url: "{{ '/' | relative_url }}"
+    url: "/moha/"
   - title: "Posts"
-    url: "{{ '/posts/' | relative_url }}"
+    url: "/moha/posts/"
   - title: "About"
-    url: "{{ '/about/' | relative_url }}"
+    url: "/moha/about/"
   - title: "GitHub"
     url: "https://github.com/MHHamdan"
   - title: "LinkedIn"
@@ -35,3 +35,6 @@ nav_links:
     url: "https://x.com/Mohamme22877190"
   - title: "Medium"
     url: "https://mh-hamdan.medium.com/"
+
+# Permalink structure
+permalink: /:categories/:year/:month/:day/:title.html
