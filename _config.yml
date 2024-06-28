@@ -46,7 +46,7 @@ nav_links:
 # Permalink structure
 permalink: /:categories/:year/:month/:day/:title.html
 
-# Categories
+# Categories (This section can be removed if it's just a reference for you)
 categories:
   - Machine Learning
   - Deep Learning
