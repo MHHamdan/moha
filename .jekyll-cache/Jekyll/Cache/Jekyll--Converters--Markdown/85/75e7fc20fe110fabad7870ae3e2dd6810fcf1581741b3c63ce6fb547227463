@@ -1,0 +1,35 @@
+I"S<h1>Blog Posts</h1>
+
+<div class="post">
+    <h2><a href="/moha/testing/2024/06/28/test-post.html">Test Post</a></h2>
+    <p><small><i>28 Jun 2024</i></small></p>
+    <p><p>This is a test post to debug the issue with blog posts not appearing on the GitHub Pages site.</p>
+</p>
+  </div>
+<hr />
+
+<div class="post">
+    <h2><a href="/moha/calculus/optimization/2024/06/28/math-post.html">Mastering Derivatives for Backpropagation in Neural Networks</a></h2>
+    <p><small><i>28 Jun 2024</i></small></p>
+    <p><p>This post outlines fundamental derivatives of various functions, which are essential in calculus. In the context of backpropagation in neural networks, these derivatives represent the mathematical foundation for computing gradients.</p>
+</p>
+  </div>
+<hr />
+
+<div class="post">
+    <h2><a href="/moha/calculus/optimization/2024/06/28/first-post.html">My First Blog Post</a></h2>
+    <p><small><i>28 Jun 2024</i></small></p>
+    <p><p>Welcome to my first blog post! This is where I will share my journey in AI, Machine Learning, and Computer Vision. Stay tuned for more updates and insights!</p>
+</p>
+  </div>
+<hr />
+
+<div class="post">
+    <h2><a href="/moha/calculus/optimization/2024/06/28/derivatives-backpropagation.html">Mastering Derivatives for Backpropagation in Neural Networks</a></h2>
+    <p><small><i>28 Jun 2024</i></small></p>
+    <p><p>This post outlines fundamental derivatives of various functions, which are essential in calculus. In the context of backpropagation in neural networks, these derivatives represent the mathematical foundation for computing gradients.</p>
+</p>
+  </div>
+<hr />
+
+:ET

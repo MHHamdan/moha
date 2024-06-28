@@ -46,7 +46,7 @@ nav_links:
 # Permalink structure
 permalink: /:categories/:year/:month/:day/:title.html
 
-# Categories (This section can be removed if it's just a reference for you)
+# Categories
 categories:
   - Machine Learning
   - Deep Learning
@@ -60,5 +60,5 @@ categories:
   - AI in Healthcare
   - AI in Finance
   - Robotics
-# Future posts setting
+
 future: true
