@@ -26,9 +26,9 @@
     </header>
     <div class="container">
         <div class="section">
-    <h2>Summary</h2>
-    <p>Experienced Data Scientist and Machine Learning Engineer with over 6 years of expertise in computer vision, natural language processing (NLP), and statistical analysis. Currently pursuing a Ph.D. at the École de Technologie Supérieure (ÉTS) in Montreal, focusing on deep learning algorithms for document image analysis. Proficient in developing innovative solutions using deep learning frameworks and data science techniques, with a proven ability to manage projects, analyze complex data, and deliver impactful results. Passionate about advancing AI technologies, particularly in the fields of handwriting recognition and healthcare applications.</p>
-    </div>
+            <h2>Summary</h2>
+            <p>Experienced Data Scientist and Machine Learning Engineer with over 6 years of expertise in computer vision, natural language processing (NLP), and statistical analysis. Currently pursuing a Ph.D. at the École de Technologie Supérieure (ÉTS) in Montreal, focusing on deep learning algorithms for document image analysis. Proficient in developing innovative solutions using deep learning frameworks and data science techniques, with a proven ability to manage projects, analyze complex data, and deliver impactful results. Passionate about advancing AI technologies, particularly in the fields of handwriting recognition and healthcare applications.</p>
+        </div>
 
         <div class="section">
             <h2>Contact Information</h2>
@@ -40,8 +40,18 @@
                 <li><a href="https://github.com/mohammed-hamdan">GitHub Profile</a></li>
             </ul>
         </div>
+
+        <!-- Add this section to display blog posts -->
+        <div class="section">
+            <h2>Recent Posts</h2>
+            <ul>
+                {% for post in site.posts %}
+                <li>
+                    <a href="{{ post.url }}">{{ post.title }}</a> - <small>{{ post.date | date: "%B %d, %Y" }}</small>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </body>
 </html>
-
-
