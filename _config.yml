@@ -1,7 +1,8 @@
 theme: minima
 title: "Dr. Mohammed Hamdan's Blog"
 baseurl: "/moha"  # GitHub Pages subpath
-url: "https://MHHamdan.github.io"
+url: "https://mhhhamdan.github.io"
+
 
 markdown: kramdown
 kramdown:
@@ -22,10 +23,20 @@ permalink: /:categories/:year/:month/:day/:title/
 
 nav_links:
   - title: "Home"
-    url: "/"
+    url: "/index.html"
+  - title: "Education"
+    url: "/education.html"
+  - title: "Skills"
+    url: "/skills.html"
+  - title: "Experience"
+    url: "/experience.html"
+  - title: "Projects"
+    url: "/projects.html"
+  - title: "Publications"
+    url: "/publications.html"
   - title: "Long CV"
-    url: "/cv_long/"
+    url: "/cvs/cv_long.html"
   - title: "Academic CV"
-    url: "/cv_academic/"
+    url: "/cvs/cv_academic.html"
   - title: "Industry CV"
-    url: "/cv_industry/"
+    url: "/cvs/cv_industry.html"
