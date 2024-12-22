@@ -26,6 +26,11 @@ mathjax:
 plugins:
   - jekyll-feed
 
+# Enable post output
+collections:
+  posts:
+    output: true
+
 # Navigation links
 nav_links:
   - title: "Home"
@@ -46,6 +51,10 @@ nav_links:
 # Permalink structure
 permalink: /:categories/:year/:month/:day/:title.html
 
+# Enable drafts and future-dated posts
+show_drafts: true
+future: true
+
 # Categories
 categories:
   - Machine Learning
@@ -60,5 +69,3 @@ categories:
   - AI in Healthcare
   - AI in Finance
   - Robotics
-
-future: true
