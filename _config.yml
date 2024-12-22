@@ -1,8 +1,8 @@
 # Site settings
 theme: minima
 title: "Dr. Mohammed Hamdan's Blog"
-baseurl: "/moha"
-url: "https://mhhamdan.github.io"
+baseurl: "/moha" # This is critical for GitHub Pages subdirectory
+url: "https://mhhamdan.github.io" # Your GitHub Pages domain
 
 # Markdown settings
 markdown: kramdown
@@ -31,22 +31,22 @@ permalink: /:categories/:year/:month/:day/:title/
 # Navigation links
 nav_links:
   - title: "Home"
-    url: "/index.html"
+    url: "/moha/"
   - title: "Education"
-    url: "/education.html"
+    url: "/moha/education.html"
   - title: "Skills"
-    url: "/skills.html"
+    url: "/moha/skills.html"
   - title: "Experience"
-    url: "/experience.html"
+    url: "/moha/experience.html"
   - title: "Projects"
-    url: "/projects.html"
+    url: "/moha/projects.html"
   - title: "Publications"
-    url: "/publications.html"
+    url: "/moha/publications.html"
   - title: "Blog Posts"
-    url: "/posts/"
+    url: "/moha/posts/"
   - title: "Long CV"
-    url: "/cvs/cv_long.html"
+    url: "/moha/cvs/cv_long.html"
   - title: "Academic CV"
-    url: "/cvs/cv_academic.html"
+    url: "/moha/cvs/cv_academic.html"
   - title: "Industry CV"
-    url: "/cvs/cv_industry.html"
+    url: "/moha/cvs/cv_industry.html"
