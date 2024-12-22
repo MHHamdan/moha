@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Mohammed Hamdan - Home</title>
-    <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/styles.css' | absolute_url }}">
 </head>
 <body>
     <header>
@@ -13,15 +13,15 @@
         <p>AI & LLM Innovator</p>
         <nav>
             <ul>
-                <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                <li><a href="{{ '/education.html' | relative_url }}">Education</a></li>
-                <li><a href="{{ '/skills.html' | relative_url }}">Skills</a></li>
-                <li><a href="{{ '/experience.html' | relative_url }}">Experience</a></li>
-                <li><a href="{{ '/projects.html' | relative_url }}">Projects</a></li>
-                <li><a href="{{ '/publications.html' | relative_url }}">Publications</a></li>
-                <li><a href="{{ '/cvs/cv_long.html' | relative_url }}">Long CV</a></li>
-                <li><a href="{{ '/cvs/cv_academic.html' | relative_url }}">Academic CV</a></li>
-                <li><a href="{{ '/cvs/cv_industry.html' | relative_url }}">Industry CV</a></li>
+                <li><a href="{{ '/' | absolute_url }}">Home</a></li>
+                <li><a href="{{ '/education.html' | absolute_url }}">Education</a></li>
+                <li><a href="{{ '/skills.html' | absolute_url }}">Skills</a></li>
+                <li><a href="{{ '/experience.html' | absolute_url }}">Experience</a></li>
+                <li><a href="{{ '/projects.html' | absolute_url }}">Projects</a></li>
+                <li><a href="{{ '/publications.html' | absolute_url }}">Publications</a></li>
+                <li><a href="{{ '/cvs/cv_long.html' | absolute_url }}">Long CV</a></li>
+                <li><a href="{{ '/cvs/cv_academic.html' | absolute_url }}">Academic CV</a></li>
+                <li><a href="{{ '/cvs/cv_industry.html' | absolute_url }}">Industry CV</a></li>
             </ul>
         </nav>
     </header>
@@ -60,7 +60,7 @@
                 <ul>
                     {% for post in site.posts %}
                     <li>
-                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                        <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                         <small>{{ post.date | date: "%B %d, %Y" }}</small>
                     </li>
                     {% endfor %}
