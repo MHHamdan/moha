@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammed Hamdan - Home</title>
+    <title>Dr. Mohammed Hamdan - AI & LLM Innovator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Mohammed Hamdan</h1>
-        <p>Machine Learning Engineer</p>
+        <h1>Dr. Mohammed Hamdan</h1>
+        <p>AI Researcher | LLM Specialist | Machine Learning & Computer Vision Innovator</p>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,37 +21,66 @@
                 <li><a href="courses.html">Courses</a></li>
                 <li><a href="awards.html">Awards</a></li>
                 <li><a href="activities.html">Activities</a></li>
+                <li><a href="cv_long.html">Long CV</a></li>
+                <li><a href="cv_academic.html">Academic CV</a></li>
+                <li><a href="cv_industry.html">Industry CV</a></li>
             </ul>
         </nav>
     </header>
     <div class="container">
         <div class="section">
-            <h2>Summary</h2>
-            <p>Experienced Data Scientist and Machine Learning Engineer with over 6 years of expertise in computer vision, natural language processing (NLP), and statistical analysis. Currently pursuing a Ph.D. at the École de Technologie Supérieure (ÉTS) in Montreal, focusing on deep learning algorithms for document image analysis. Proficient in developing innovative solutions using deep learning frameworks and data science techniques, with a proven ability to manage projects, analyze complex data, and deliver impactful results. Passionate about advancing AI technologies, particularly in the fields of handwriting recognition and healthcare applications.</p>
+            <h2>About Me</h2>
+            <p>Dr. Mohammed Hamdan is a cutting-edge researcher in Machine Learning (ML), Large Language Models (LLMs), and Computer Vision (CV). With a Ph.D. from <b>École de Technologie Supérieure (ÉTS)</b>, Montreal, Canada, and extensive experience in integrating Generative AI, Retrieval-Augmented Generation (RAG), and vision-language systems, he specializes in developing state-of-the-art AI solutions.</p>
+            <p>As a pioneer in LLM engineering, Mohammed leverages models like GPT, RAG, and QLoRA, combined with tools like HuggingFace, LangChain, and Gradio, to tackle real-world challenges in healthcare, document analysis, and customer support automation.</p>
+        </div>
+
+        <div class="section">
+            <h2>Core Expertise</h2>
+            <ul>
+                <li><b>AI & LLM Engineering:</b> Expert in GPT, RAG, QLoRA, and fine-tuning large-scale models.</li>
+                <li><b>Generative AI:</b> Practical applications in multimodal chatbots, customer support, and data retrieval systems.</li>
+                <li><b>Integration of NLP & CV:</b> Developed hybrid models for OCR, multilingual document processing, and AI-assisted coding tools.</li>
+                <li><b>MLOps:</b> Deployment of scalable ML pipelines using Docker, Kubernetes, and cloud platforms (AWS, GCP).</li>
+                <li><b>Research:</b> Published in top-tier journals and conferences, contributing to AI innovation.</li>
+            </ul>
         </div>
 
         <div class="section">
             <h2>Contact Information</h2>
             <ul class="contact-info">
-                <li>Montreal, QC, Canada</li>
-                <li>+1 (514) 219 2291</li>
-                <li><a href="mailto:mh2022ets@gmail.com">mh2022ets@gmail.com</a></li>
+                <li>Location: Montreal, QC, Canada</li>
+                <li>Phone: +1 (514) 219 2291</li>
+                <li>Email: <a href="mailto:mhhamdan89@gmail.com">mhhamdan89@gmail.com</a></li>
                 <li><a href="https://www.linkedin.com/in/mohammed-hamdan-b4545316a/">LinkedIn Profile</a></li>
-                <li><a href="https://github.com/mohammed-hamdan">GitHub Profile</a></li>
+                <li><a href="https://github.com/MHHamdan">GitHub Profile</a></li>
             </ul>
         </div>
 
-        <!-- Add this section to display blog posts -->
         <div class="section">
-            <h2>Recent Posts</h2>
+            <h2>Recent Blog Posts</h2>
             <ul>
                 {% for post in site.posts %}
                 <li>
-                    <a href="{{ post.url }}">{{ post.title }}</a> - <small>{{ post.date | date: "%B %d, %Y" }}</small>
+                    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                    <small>{{ post.date | date: "%B %d, %Y" }}</small>
                 </li>
                 {% endfor %}
             </ul>
         </div>
+
+        <div class="section">
+            <h2>Highlighted Projects</h2>
+            <ul>
+                <li><b>AI Knowledge Worker:</b> An advanced system leveraging RAG to answer complex organizational queries.</li>
+                <li><b>Generative AI Customer Support Agent:</b> Multimodal chatbot integrating NLP and image recognition for real-time solutions.</li>
+                <li><b>Code Optimization with LLMs:</b> AI tool converting Python to optimized C++, achieving performance boosts up to 60,000x.</li>
+                <li><b>NLP-CV Integration:</b> Transformer models for multilingual document processing and OCR.</li>
+                <li><b>Scalable AI Solutions:</b> Deployed AI-driven traffic management and customer support systems.</li>
+            </ul>
+        </div>
     </div>
+    <footer>
+        <p>&copy; {{ site.time | date: "%Y" }} Dr. Mohammed Hamdan | Innovating AI & LLMs</p>
+    </footer>
 </body>
 </html>

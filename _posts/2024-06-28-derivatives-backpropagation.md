@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Mastering Derivatives for Backpropagation in Neural Networks"
-date: 2024-06-28 12:00:00
-categories: Calculus/Optimization
-future: true
+title: "DerivativeBP"
+date: 2024-06-28-2024-06-28-derivatives-backpropagation.md
+categories: [LLM]
+tags: [AI, Math,Caclus]
 ---
+
 
 This post outlines fundamental derivatives of various functions, which are essential in calculus. In the context of backpropagation in neural networks, these derivatives represent the mathematical foundation for computing gradients.
 

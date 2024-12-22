@@ -1,71 +1,31 @@
 theme: minima
+title: "Dr. Mohammed Hamdan's Blog"
+baseurl: "/moha"  # GitHub Pages subpath
+url: "https://MHHamdan.github.io"
 
-# Site settings
-title: Mohammed Hamdan's AI Blog
-email: mh2022ets@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  A blog about AI, Machine Learning, and Computer Vision.
-baseurl: "/moha" # the subpath of your site, e.g. /blog
-url: "https://MHHamdan.github.io" # the base hostname & protocol for your site
-
-# Social settings
-twitter_username: Mohamme22877190
-github_username: MHHamdan
-
-# Build settings
 markdown: kramdown
 kramdown:
   input: GFM
   math_engine: mathjax
-  syntax_highlighter: rouge
-
-mathjax: 
-  path: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
-
-# Plugins
-plugins:
-  - jekyll-feed
-
-# Enable post output
+  syntax_highlighter_opts:
+    inline_theme: monokai
+    block_theme: monokai
+future: true
 collections:
   posts:
     output: true
 
-# Navigation links
+plugins:
+  - jekyll-feed
+
+permalink: /:categories/:year/:month/:day/:title/
+
 nav_links:
   - title: "Home"
     url: "/"
-  - title: "Posts"
-    url: "/posts/"
-  - title: "About"
-    url: "/about/"
-  - title: "GitHub"
-    url: "https://github.com/MHHamdan"
-  - title: "LinkedIn"
-    url: "https://www.linkedin.com/in/mohammed-hamdan-b4545316a/"
-  - title: "X"
-    url: "https://x.com/Mohamme22877190"
-  - title: "Medium"
-    url: "https://mh-hamdan.medium.com/"
-
-# Permalink structure
-permalink: /:categories/:year/:month/:day/:title.html
-
-# Enable drafts and future-dated posts
-show_drafts: true
-future: true
-
-# Categories
-categories:
-  - Machine Learning
-  - Deep Learning
-  - Natural Language Processing
-  - Computer Vision
-  - Reinforcement Learning
-  - Data Science
-  - Neural Networks
-  - Calculus/Optimization
-  - AI Ethics
-  - AI in Healthcare
-  - AI in Finance
-  - Robotics
+  - title: "Long CV"
+    url: "/cv_long/"
+  - title: "Academic CV"
+    url: "/cv_academic/"
+  - title: "Industry CV"
+    url: "/cv_industry/"
