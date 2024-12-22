@@ -1,3 +1,4 @@
+<!-- Updated index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,74 +12,73 @@
         <h1>Dr. Mohammed Hamdan</h1>
         <p>AI & LLM Innovator</p>
         <nav>
-			<ul>
-				<li><a href="{{ '/index.html' | relative_url }}">Home</a></li>
-				<li><a href="{{ '/education.html' | relative_url }}">Education</a></li>
-				<li><a href="{{ '/skills.html' | relative_url }}">Skills</a></li>
-				<li><a href="{{ '/experience.html' | relative_url }}">Experience</a></li>
-				<li><a href="{{ '/projects.html' | relative_url }}">Projects</a></li>
-				<li><a href="{{ '/publications.html' | relative_url }}">Publications</a></li>
-				<li><a href="{{ '/cvs/cv_long.html' | relative_url }}">Long CV</a></li>
-				<li><a href="{{ '/cvs/cv_academic.html' | relative_url }}">Academic CV</a></li>
-				<li><a href="{{ '/cvs/cv_industry.html' | relative_url }}">Industry CV</a></li>
-			</ul>
-		</nav>
-
+            <ul>
+                <li><a href="{{ '/index.html' | relative_url }}">Home</a></li>
+                <li><a href="{{ '/education.html' | relative_url }}">Education</a></li>
+                <li><a href="{{ '/skills.html' | relative_url }}">Skills</a></li>
+                <li><a href="{{ '/experience.html' | relative_url }}">Experience</a></li>
+                <li><a href="{{ '/projects.html' | relative_url }}">Projects</a></li>
+                <li><a href="{{ '/publications.html' | relative_url }}">Publications</a></li>
+                <li><a href="{{ '/cvs/cv_long.html' | relative_url }}">Long CV</a></li>
+                <li><a href="{{ '/cvs/cv_academic.html' | relative_url }}">Academic CV</a></li>
+                <li><a href="{{ '/cvs/cv_industry.html' | relative_url }}">Industry CV</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-    <div class="container">
-        <div class="section">
-            <h2>About Me</h2>
-            <p>Dr. Mohammed Hamdan is a cutting-edge researcher in Machine Learning (ML), Large Language Models (LLMs), and Computer Vision (CV). With a Ph.D. from <b>École de Technologie Supérieure (ÉTS)</b>, Montreal, Canada, and extensive experience in integrating Generative AI, Retrieval-Augmented Generation (RAG), and vision-language systems, he specializes in developing state-of-the-art AI solutions.</p>
-            <p>As a pioneer in LLM engineering, Mohammed leverages models like GPT, RAG, and QLoRA, combined with tools like HuggingFace, LangChain, and Gradio, to tackle real-world challenges in healthcare, document analysis, and customer support automation.</p>
-        </div>
+        <div class="container">
+            <div class="section">
+                <h2>About Me</h2>
+                <p>Dr. Mohammed Hamdan is a cutting-edge researcher in Machine Learning (ML), Large Language Models (LLMs), and Computer Vision (CV). With a Ph.D. from <b>École de Technologie Supérieure (ÉTS)</b>, Montreal, Canada, and extensive experience in integrating Generative AI, Retrieval-Augmented Generation (RAG), and vision-language systems, he specializes in developing state-of-the-art AI solutions.</p>
+                <p>As a pioneer in LLM engineering, Mohammed leverages models like GPT, RAG, and QLoRA, combined with tools like HuggingFace, LangChain, and Gradio, to tackle real-world challenges in healthcare, document analysis, and customer support automation.</p>
+            </div>
 
-        <div class="section">
-            <h2>Core Expertise</h2>
-            <ul>
-                <li><b>AI & LLM Engineering:</b> Expert in GPT, RAG, QLoRA, and fine-tuning large-scale models.</li>
-                <li><b>Generative AI:</b> Practical applications in multimodal chatbots, customer support, and data retrieval systems.</li>
-                <li><b>Integration of NLP & CV:</b> Developed hybrid models for OCR, multilingual document processing, and AI-assisted coding tools.</li>
-                <li><b>MLOps:</b> Deployment of scalable ML pipelines using Docker, Kubernetes, and cloud platforms (AWS, GCP).</li>
-                <li><b>Research:</b> Published in top-tier journals and conferences, contributing to AI innovation.</li>
-            </ul>
-        </div>
+            <div class="section">
+                <h2>Core Expertise</h2>
+                <ul>
+                    <li><b>AI & LLM Engineering:</b> Expert in GPT, RAG, QLoRA, and fine-tuning large-scale models.</li>
+                    <li><b>Generative AI:</b> Practical applications in multimodal chatbots, customer support, and data retrieval systems.</li>
+                    <li><b>Integration of NLP & CV:</b> Developed hybrid models for OCR, multilingual document processing, and AI-assisted coding tools.</li>
+                    <li><b>MLOps:</b> Deployment of scalable ML pipelines using Docker, Kubernetes, and cloud platforms (AWS, GCP).</li>
+                    <li><b>Research:</b> Published in top-tier journals and conferences, contributing to AI innovation.</li>
+                </ul>
+            </div>
 
-        <div class="section">
-            <h2>Contact Information</h2>
-            <ul class="contact-info">
-                <li>Location: Montreal, QC, Canada</li>
-                <li>Phone: +1 (514) 219 2291</li>
-                <li>Email: <a href="mailto:mhhamdan89@gmail.com">mhhamdan89@gmail.com</a></li>
-                <li><a href="https://www.linkedin.com/in/mohammed-hamdan-b4545316a/">LinkedIn Profile</a></li>
-                <li><a href="https://github.com/MHHamdan">GitHub Profile</a></li>
-            </ul>
-        </div>
+            <div class="section">
+                <h2>Contact Information</h2>
+                <ul class="contact-info">
+                    <li>Location: Montreal, QC, Canada</li>
+                    <li>Phone: +1 (514) 219 2291</li>
+                    <li>Email: <a href="mailto:mhhamdan89@gmail.com">mhhamdan89@gmail.com</a></li>
+                    <li><a href="https://www.linkedin.com/in/mohammed-hamdan-b4545316a/">LinkedIn Profile</a></li>
+                    <li><a href="https://github.com/MHHamdan">GitHub Profile</a></li>
+                </ul>
+            </div>
 
-        <div class="section">
-            <h2>Recent Blog Posts</h2>
-            <ul>
-                {% for post in site.posts %}
-                <li>
-                    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                    <small>{{ post.date | date: "%B %d, %Y" }}</small>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
+            <div class="section">
+                <h2>Recent Blog Posts</h2>
+                <ul>
+                    {% for post in site.posts %}
+                    <li>
+                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                        <small>{{ post.date | date: "%B %d, %Y" }}</small>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
 
-        <div class="section">
-            <h2>Highlighted Projects</h2>
-            <ul>
-                <li><b>AI Knowledge Worker:</b> An advanced system leveraging RAG to answer complex organizational queries.</li>
-                <li><b>Generative AI Customer Support Agent:</b> Multimodal chatbot integrating NLP and image recognition for real-time solutions.</li>
-                <li><b>Code Optimization with LLMs:</b> AI tool converting Python to optimized C++, achieving performance boosts up to 60,000x.</li>
-                <li><b>NLP-CV Integration:</b> Transformer models for multilingual document processing and OCR.</li>
-                <li><b>Scalable AI Solutions:</b> Deployed AI-driven traffic management and customer support systems.</li>
-            </ul>
+            <div class="section">
+                <h2>Highlighted Projects</h2>
+                <ul>
+                    <li><b>AI Knowledge Worker:</b> An advanced system leveraging RAG to answer complex organizational queries.</li>
+                    <li><b>Generative AI Customer Support Agent:</b> Multimodal chatbot integrating NLP and image recognition for real-time solutions.</li>
+                    <li><b>Code Optimization with LLMs:</b> AI tool converting Python to optimized C++, achieving performance boosts up to 60,000x.</li>
+                    <li><b>NLP-CV Integration:</b> Transformer models for multilingual document processing and OCR.</li>
+                    <li><b>Scalable AI Solutions:</b> Deployed AI-driven traffic management and customer support systems.</li>
+                </ul>
+            </div>
         </div>
-    </div>
- </main>
+    </main>
     <footer>
         <p>&copy; {{ site.time | date: "%Y" }} Dr. Mohammed Hamdan | Innovating AI & LLMs</p>
     </footer>

@@ -1,36 +1,39 @@
+<!-- Updated layouts for posts.html and category.html -->
+<!-- posts.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
 </head>
 <body>
     <header>
-        <h1><a href="{{ "/" | relative_url }}">Mohammed Hamdan's Blog</a></h1>
+        <h1>Blog Posts</h1>
         <nav>
             <ul>
-                <li><a href="{{ "/" | relative_url }}">Home</a></li>
-                <li><a href="{{ "/about" | relative_url }}">About</a></li>
-                <li><a href="{{ "/posts" | relative_url }}">Posts</a></li>
-                <li><a href="https://github.com/MHHamdan">GitHub</a></li>
+                <li><a href="{{ '/index.html' | relative_url }}">Home</a></li>
+                <li><a href="{{ '/about.html' | relative_url }}">About</a></li>
+                <li><a href="{{ '/posts/' | relative_url }}">Posts</a></li>
             </ul>
         </nav>
     </header>
-
-    <div class="content">
-        <div class="post">
-            <h2>{{ page.title }}</h2>
-            <p><small><i>{{ page.date | date: "%B %d, %Y" }}</i></small></p>
-            <div class="post-content">
-                {{ content }}
-            </div>
+    <main>
+        <div class="container">
+            <h2>Recent Blog Posts</h2>
+            <ul>
+                {% for post in site.posts %}
+                <li>
+                    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                    <p>{{ post.excerpt }}</p>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
-    </div>
-
+    </main>
     <footer>
-        <p>&copy; {{ site.time | date: "%Y" }} Mohammed Hamdan</p>
+        <p>&copy; {{ site.time | date: "%Y" }} Dr. Mohammed Hamdan</p>
     </footer>
 </body>
 </html>
