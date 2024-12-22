@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Mohammed Hamdan - Home</title>
-    <link rel="stylesheet" href="{{ '/assets/styles.css' | absolute_url }}">
+    <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
     <header>
@@ -13,15 +13,15 @@
         <p>AI & LLM Innovator</p>
         <nav>
             <ul>
-                <li><a href="{{ '/' | absolute_url }}">Home</a></li>
-                <li><a href="{{ '/education.html' | absolute_url }}">Education</a></li>
-                <li><a href="{{ '/skills.html' | absolute_url }}">Skills</a></li>
-                <li><a href="{{ '/experience.html' | absolute_url }}">Experience</a></li>
-                <li><a href="{{ '/projects.html' | absolute_url }}">Projects</a></li>
-                <li><a href="{{ '/publications.html' | absolute_url }}">Publications</a></li>
-                <li><a href="{{ '/cvs/cv_long.html' | absolute_url }}">Long CV</a></li>
-                <li><a href="{{ '/cvs/cv_academic.html' | absolute_url }}">Academic CV</a></li>
-                <li><a href="{{ '/cvs/cv_industry.html' | absolute_url }}">Industry CV</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/education.html">Education</a></li>
+                <li><a href="/skills.html">Skills</a></li>
+                <li><a href="/experience.html">Experience</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/publications.html">Publications</a></li>
+                <li><a href="/cvs/cv_long.html">Long CV</a></li>
+                <li><a href="/cvs/cv_academic.html">Academic CV</a></li>
+                <li><a href="/cvs/cv_industry.html">Industry CV</a></li>
             </ul>
         </nav>
     </header>
@@ -60,7 +60,7 @@
                 <ul>
                     {% for post in site.posts %}
                     <li>
-                        <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                        <a href="{{ post.url }}">{{ post.title }}</a>
                         <small>{{ post.date | date: "%B %d, %Y" }}</small>
                     </li>
                     {% endfor %}
