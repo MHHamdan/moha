@@ -1,7 +1,7 @@
 theme: minima
 title: "Dr. Mohammed Hamdan's Blog"
 baseurl: "/moha"  # GitHub Pages subpath
-url: "https://mhhhamdan.github.io"
+url: "https://MHHamdan.github.io"
 
 
 markdown: kramdown
