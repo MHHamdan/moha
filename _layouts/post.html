@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
+</head>
+<body>
+    <header>
+        <h1><a href="{{ "/" | relative_url }}">Mohammed Hamdan's Blog</a></h1>
+        <nav>
+            <ul>
+                <li><a href="{{ "/" | relative_url }}">Home</a></li>
+                <li><a href="{{ "/about" | relative_url }}">About</a></li>
+                <li><a href="{{ "/posts" | relative_url }}">Posts</a></li>
+                <li><a href="https://github.com/MHHamdan">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="post">
+            <h2>{{ page.title }}</h2>
+            <p><small><i>{{ page.date | date: "%B %d, %Y" }}</i></small></p>
+            <div class="post-content">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; {{ site.time | date: "%Y" }} Mohammed Hamdan</p>
+    </footer>
+</body>
+</html>
