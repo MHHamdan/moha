@@ -1,10 +1,10 @@
-<!-- Updated _config.yml -->
+# Site settings
 theme: minima
 title: "Dr. Mohammed Hamdan's Blog"
 baseurl: "/moha"
-
 url: "https://mhhamdan.github.io"
 
+# Markdown settings
 markdown: kramdown
 kramdown:
   input: GFM
@@ -12,16 +12,23 @@ kramdown:
   syntax_highlighter_opts:
     inline_theme: monokai
     block_theme: monokai
+
+# Future-dated posts handling
 future: true
+
+# Collections settings
 collections:
   posts:
     output: true
 
+# Plugins
 plugins:
   - jekyll-feed
 
+# Permalinks configuration
 permalink: /:categories/:year/:month/:day/:title/
 
+# Navigation links
 nav_links:
   - title: "Home"
     url: "/index.html"
