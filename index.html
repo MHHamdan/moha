@@ -5,25 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Mohammed Hamdan - Home</title>
-    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="{{ '/assets/styles.css' | prepend: site.baseurl }}">
+
 </head>
 <body>
     <header>
         <h1>Dr. Mohammed Hamdan</h1>
         <p>AI & LLM Innovator</p>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/education.html">Education</a></li>
-                <li><a href="/skills.html">Skills</a></li>
-                <li><a href="/experience.html">Experience</a></li>
-                <li><a href="/projects.html">Projects</a></li>
-                <li><a href="/publications.html">Publications</a></li>
-                <li><a href="/cvs/cv_long.html">Long CV</a></li>
-                <li><a href="/cvs/cv_academic.html">Academic CV</a></li>
-                <li><a href="/cvs/cv_industry.html">Industry CV</a></li>
-            </ul>
-        </nav>
+			<nav>
+			<ul>
+				<li><a href="{{ '/' | prepend: site.baseurl }}">Home</a></li>
+				<li><a href="{{ '/education.html' | prepend: site.baseurl }}">Education</a></li>
+				<li><a href="{{ '/skills.html' | prepend: site.baseurl }}">Skills</a></li>
+				<li><a href="{{ '/experience.html' | prepend: site.baseurl }}">Experience</a></li>
+				<li><a href="{{ '/projects.html' | prepend: site.baseurl }}">Projects</a></li>
+				<li><a href="{{ '/publications.html' | prepend: site.baseurl }}">Publications</a></li>
+				<li><a href="{{ '/cvs/cv_long.html' | prepend: site.baseurl }}">Long CV</a></li>
+				<li><a href="{{ '/cvs/cv_academic.html' | prepend: site.baseurl }}">Academic CV</a></li>
+				<li><a href="{{ '/cvs/cv_industry.html' | prepend: site.baseurl }}">Industry CV</a></li>
+			</ul>
+		</nav>
+
     </header>
     <main>
         <div class="container">
