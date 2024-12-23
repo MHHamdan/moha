@@ -12,7 +12,7 @@ Hello! I’m **Mohammed Hamdan**, a passionate researcher and professional speci
 
 - **Name**: Mohammed Hamdan  
 - **Location**: Montreal, QC, Canada  
-- **Contact**: [mhhamdan89@gmail@gmail.com](mhhamdan89@gmail.com)  
+- **Contact**: [mhhamdan89@gmail.com](mailto:mhhamdan89@gmail.com)  
 - **LinkedIn**: [Visit My Profile](https://www.linkedin.com/in/mohammed-hamdan-b4545316a/)  
 - **X (formerly Twitter)**: [@Mohamme22877190](https://x.com/Mohamme22877190)  
 
