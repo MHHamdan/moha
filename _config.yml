@@ -4,7 +4,6 @@ title: "Dr. Mohammed Hamdan's Blog"
 baseurl: "/moha"
 url: "https://mhhamdan.github.io"
 
-
 # Markdown settings
 markdown: kramdown
 kramdown:

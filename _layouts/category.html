@@ -1,4 +1,8 @@
-<!-- category.html -->
+---
+layout: default
+title: "{{ page.title }}"
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +17,7 @@
         <nav>
             <ul>
                 <li><a href="{{ '/index.html' | relative_url }}">Home</a></li>
-                <li><a href="{{ '/about.html' | relative_url }}">About</a></li>
+                <li><a href="{{ '/about/' | relative_url }}">About</a></li>
                 <li><a href="{{ '/categories/' | relative_url }}">Categories</a></li>
             </ul>
         </nav>
