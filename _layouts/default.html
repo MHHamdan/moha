@@ -1,29 +1,39 @@
-<!-- Updated default.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{ site.title }}</title>
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link to your custom CSS -->
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
 </head>
 <body>
   <header>
-    <h1>{{ site.title }}</h1>
+    <h1>Dr. Mohammed Hamdan</h1>
+    <p>AI &amp; LLM Innovator</p>
     <nav>
-	  <ul>
-		{% for link in site.nav_links %}
-		  <li><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
-		{% endfor %}
-	  </ul>
-	</nav>
-
+      <ul>
+        <li><a href="{{ site.baseurl }}/">Home</a></li>
+        <li><a href="{{ site.baseurl }}/education.html">Education</a></li>
+        <li><a href="{{ site.baseurl }}/skills.html">Skills</a></li>
+        <li><a href="{{ site.baseurl }}/experience.html">Experience</a></li>
+        <li><a href="{{ site.baseurl }}/projects.html">Projects</a></li>
+        <li><a href="{{ site.baseurl }}/publications.html">Publications</a></li>
+        <li><a href="{{ site.baseurl }}/cvs/cv_long.html">Long CV</a></li>
+        <li><a href="{{ site.baseurl }}/cvs/cv_academic.html">Academic CV</a></li>
+        <li><a href="{{ site.baseurl }}/cvs/cv_industry.html">Industry CV</a></li>
+      </ul>
+    </nav>
   </header>
-  <main>
+
+  <!-- Jekyll inserts each page’s unique content here -->
+  <main class="container">
     {{ content }}
   </main>
+
   <footer>
-    <p>© 2024 {{ site.title }}</p>
+    <p>&copy; {{ site.time | date: "%Y" }} Dr. Mohammed Hamdan | Innovating AI &amp; LLMs</p>
   </footer>
 </body>
 </html>
