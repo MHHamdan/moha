@@ -1,7 +1,7 @@
 # Site settings
 theme: minima
 title: "Dr. Mohammed Hamdan's Blog"
-baseurl: "/moha/" # Subdirectory for GitHub Pages
+baseurl: "/moha" # Subdirectory for GitHub Pages
 url: "https://mhhamdan.github.io" # GitHub Pages domain
 
 # Markdown settings
