@@ -1,39 +1,48 @@
-<!-- Updated layouts for posts.html and category.html -->
-<!-- posts.html -->
+---
+layout: null
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Use the same CSS as default.html -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
 </head>
 <body>
-    <header>
-        <h1>Blog Posts</h1>
-        <nav>
-            <ul>
-                <li><a href="{{ '/index.html' | relative_url }}">Home</a></li>
-                <li><a href="{{ '/about.html' | relative_url }}">About</a></li>
-                <li><a href="{{ '/posts/' | relative_url }}">Posts</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="container">
-            <h2>Recent Blog Posts</h2>
-            <ul>
-                {% for post in site.posts %}
-                <li>
-                    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                    <p>{{ post.excerpt }}</p>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; {{ site.time | date: "%Y" }} Dr. Mohammed Hamdan</p>
-    </footer>
+  <header>
+    <h1>Dr. Mohammed Hamdan</h1>
+    <p>AI &amp; LLM Innovator</p>
+    <nav>
+      <ul>
+        <li><a href="{{ site.baseurl }}/">Home</a></li>
+        <li><a href="{{ site.baseurl }}/education.html">Education</a></li>
+        <li><a href="{{ site.baseurl }}/skills.html">Skills</a></li>
+        <li><a href="{{ site.baseurl }}/experience.html">Experience</a></li>
+        <li><a href="{{ site.baseurl }}/projects.html">Projects</a></li>
+        <li><a href="{{ site.baseurl }}/publications.html">Publications</a></li>
+        <li><a href="{{ site.baseurl }}/cvs/cv_long.html">Long CV</a></li>
+        <li><a href="{{ site.baseurl }}/cvs/cv_academic.html">Academic CV</a></li>
+        <li><a href="{{ site.baseurl }}/cvs/cv_industry.html">Industry CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Unique blog post content -->
+    <article>
+      <h2>{{ page.title }}</h2>
+      <p><small><i>{{ page.date | date: "%B %d, %Y" }}</i></small></p>
+      <div>
+        {{ content }}
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; {{ site.time | date: "%Y" }} Dr. Mohammed Hamdan | Innovating AI &amp; LLMs</p>
+  </footer>
 </body>
 </html>
