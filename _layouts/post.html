@@ -8,6 +8,8 @@ layout: null
   <meta charset="UTF-8">
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ page.excerpt | strip_html }}">
+
   <!-- Use the same CSS as default.html -->
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
 </head>
@@ -18,14 +20,14 @@ layout: null
     <nav>
       <ul>
         <li><a href="{{ site.baseurl }}/">Home</a></li>
-        <li><a href="{{ site.baseurl }}/education.html">Education</a></li>
-        <li><a href="{{ site.baseurl }}/skills.html">Skills</a></li>
-        <li><a href="{{ site.baseurl }}/experience.html">Experience</a></li>
-        <li><a href="{{ site.baseurl }}/projects.html">Projects</a></li>
-        <li><a href="{{ site.baseurl }}/publications.html">Publications</a></li>
-        <li><a href="{{ site.baseurl }}/cvs/cv_long.html">Long CV</a></li>
-        <li><a href="{{ site.baseurl }}/cvs/cv_academic.html">Academic CV</a></li>
-        <li><a href="{{ site.baseurl }}/cvs/cv_industry.html">Industry CV</a></li>
+        <li><a href="{{ site.baseurl }}/education.html" aria-label="View Education page"> Education</a></li>
+        <li><a href="{{ site.baseurl }}/portfolio.html" aria-label="View Portfolio page"> Portfolio</a></li>
+        <li><a href="{{ site.baseurl }}/experience.html"  aria-label="View Experience page">Experience</a></li>
+        <li><a href="{{ site.baseurl }}/projects.html"  aria-label="View Projects page" >Projects</a></li>
+        <li><a href="{{ site.baseurl }}/publications.html"  aria-label="View Publications page">Publications</a></li>
+        <li><a href="{{ site.baseurl }}/cvs/cv_long.html"  aria-label="View Long CV page">Long CV</a></li>
+        <li><a href="{{ site.baseurl }}/cvs/cv_academic.html"  aria-label="View Academic CV page">Academic CV</a></li>
+        <li><a href="{{ site.baseurl }}/cvs/cv_industry.html"  aria-label="View Industry CV page">Industry CV</a></li>
       </ul>
     </nav>
   </header>

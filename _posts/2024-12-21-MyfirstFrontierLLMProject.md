@@ -11,24 +11,53 @@ I’m so excited to dive into this and share what I’ve learned so far. This is
 
 ---
 
+<nav aria-label="Breadcrumb" class="breadcrumb">
+  <ul>
+    <li><a href="{{ site.baseurl }}/">Home</a></li>
+    <li><a href="{{ site.baseurl }}/posts/">Blog Posts</a></li>
+    <li>{{ page.title }}</li>
+  </ul>
+</nav>
+
 ## Getting Started with Prompts
 
-The first thing we need to understand is how **LLMs interpret instructions**. There are two key types of prompts:
+Understanding how **LLMs interpret instructions** is essential. There are two key types of prompts:
 
 ### 1. System Prompt
-This is like setting the stage. It tells the model the **context of the conversation**, what kind of task it’s performing, and even the **tone** to use. 
+The system prompt sets the stage for the model. It defines the **context of the conversation**, the **task to be performed**, and even the **tone** of the interaction. 
 
-> For example, in this experiment, the system prompt is set to make the model act as an assistant that analyzes websites and summarizes their content.  
+> Example: In this experiment, the system prompt instructs the model to act as an assistant that analyzes websites and summarizes their content.
 
-We’ll play around with this more as we go, and it’s fascinating to see how changing it can influence the responses.
+Experimenting with different system prompts reveals how they can significantly influence the model’s behavior and responses.
 
 ### 2. User Prompt
-This is where we give **specific instructions** or ask a question. It’s the actual **conversation starter**.
+The user prompt provides **specific instructions** or poses a question, acting as the conversation starter. 
 
-> In this case, the user prompt is asking the model to summarize the content of a website.  
+> Example: Here, the user prompt asks the model to summarize a website’s content.
 
-Together, these prompts guide the model to generate responses that are **relevant** and **structured**.
+These prompts work together to guide the model, ensuring its responses are **relevant**, **structured**, and aligned with the task.
 
 ---
 
-Stay tuned for more insights as I explore the world of LLMs and prompt engineering!
+### Conclusion
+
+Stay tuned for more insights as I dive deeper into the fascinating world of LLMs and **prompt engineering**!
+
+---
+
+<section>
+  <h3>Related Posts</h3>
+  <ul>
+    {% for post in site.posts limit:3 %}
+    {% if post.url != page.url %}
+    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</section>
+
+<div class="social-sharing">
+  <p>Share this post:</p>
+  <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" target="_blank">Share on Twitter</a> |
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}" target="_blank">Share on LinkedIn</a>
+</div>
