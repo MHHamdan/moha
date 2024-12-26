@@ -7,16 +7,12 @@ layout: null
 <head>
   <meta charset="UTF-8">
   <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ page.excerpt | strip_html }}">
-
-  <!-- Use the same CSS as default.html -->
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
 </head>
 <body>
   <header>
     <h1>Dr. Mohammed Hamdan</h1>
-    <p>AI &amp; LLM Innovator</p>
     <nav>
       <ul>
         <li><a href="{{ site.baseurl }}/"  aria-label="View Haome page">Home</a></li>
@@ -33,7 +29,7 @@ layout: null
     </nav>
   </header>
 
-  <main>
+   <main>
     <article>
       <h2>{{ page.title }}</h2>
       <p><small><i>{{ page.date | date: "%B %d, %Y" }}</i></small></p>

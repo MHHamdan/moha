@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Daily Plog - December 21, 2024"
+title: "Frontier LLM Project"
 date: 2024-12-21 12:00:00 +0000
-categories: [daily, plog]
-tags: [update, thoughts]
+categories: [Larage Multimodel Model]
+tags: [GPT, NLP]
 ---
+ 
 
 
 Welcome to my first **LM experiment**!  
