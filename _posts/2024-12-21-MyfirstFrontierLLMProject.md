@@ -39,9 +39,7 @@ These prompts work together to guide the model, ensuring its responses are **rel
 
 ---
 
-### Mathematical Example (if applicable)
-
-Here is an example of a mathematical equation formatted for better readability:
+### Mathematical Example  
 
 The derivative of a function \( f(x) \) is given by:
 
