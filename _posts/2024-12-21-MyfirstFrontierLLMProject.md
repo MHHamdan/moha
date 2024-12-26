@@ -45,8 +45,14 @@ Here is an example of a mathematical equation formatted in Markdown for better r
 
 The derivative of a function \( f(x) \) is given by:
 
+```markdown
+\[ \frac{d}{dx}f(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h} \]
+```
+
+Rendered as:
+
 \[
-\frac{d}{dx}f(x) = \lim_{{h \to 0}} \frac{f(x+h) - f(x)}{h}
+\frac{d}{dx}f(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
 \]
 
 This equation represents the fundamental definition of differentiation.
