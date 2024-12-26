@@ -6,7 +6,7 @@ categories: [LLM]
 tags: [AI, Math, Calculus]
 ---
 
-This post outlines the fundamental derivatives of various functions, which are essential in calculus. In the context of backpropagation in neural networks, these derivatives represent the mathematical foundation for computing gradients.
+This post focuses on the mathematical equations and derivatives that form the core of backpropagation in neural networks. These derivatives underpin gradient computation, which is essential for optimizing the performance of machine learning models.
 
 ---
 
@@ -18,94 +18,112 @@ This post outlines the fundamental derivatives of various functions, which are e
   </ul>
 </nav>
 
-## Backpropagation in Neural Networks
+## The Role of Derivatives in Backpropagation
 
-Backpropagation is the process of training a neural network by adjusting weights based on the error rate obtained in the previous epoch (iteration). The main goal is to minimize the error using the gradient descent algorithm. Here's how derivatives relate to backpropagation:
+Backpropagation trains neural networks by computing gradients of the loss function with respect to the model's weights and biases. These gradients are used to adjust the parameters, minimizing the loss function over time. The key mathematical operations involved include the chain rule and derivatives of common functions.
 
-### 1. Chain Rule
+### Chain Rule
 
-The chain rule of calculus is pivotal in backpropagation. It allows us to compute the derivative of a composite function:
+The chain rule is fundamental to backpropagation as it allows us to compute the derivative of composite functions. For a composition of functions, where \( z = f(g(x)) \), the chain rule is expressed as:
 
 $$
-\frac{dz}{dx} = \frac{dz}{dg} \cdot \frac{dg}{dx}, \quad \text{where } z = f(g(x))
+\frac{dz}{dx} = \frac{dz}{dg} \cdot \frac{dg}{dx}
 $$
 
-### 2. Activation Functions
+This principle is applied repeatedly in neural networks as gradients are propagated backward through layers.
 
-The derivatives of common functions are often used as activation functions or in loss function calculations:
+### Activation Functions and Their Derivatives
 
-- Exponential: \( \frac{d}{dx} e^x = e^x \)
-- Logarithmic: \( \frac{d}{dx} \log x = \frac{1}{x} \)
-- Trigonometric: \( \frac{d}{dx} \sin x = \cos x \)
-
-### 3. Gradient Descent
-
-During backpropagation, gradients of the loss function with respect to each weight in the network are computed. These gradients are used to update the weights to minimize the loss. For instance:
-
-- If the loss function involves \( e^{f(x)} \), its derivative \( e^{f(x)} f'(x) \) becomes part of the gradient computation.
-
-### 4. Complex Functions
-
-For more advanced functions, derivatives are essential. Examples include:
-
-- \( \frac{d}{dx} \tan x = \sec^2 x \)
-- \( \frac{d}{dx} \sin^{-1} x = \frac{1}{\sqrt{1-x^2}} \)
-
----
-
-## Derivative Rules by Category
-
-### Exponential and Logarithmic Functions
+Activation functions introduce non-linearity into the network. The derivatives of these functions are essential for gradient computation during backpropagation. Common examples include:
 
 1. **Exponential Functions**:
-   - \( \frac{d}{dx} e^x = e^x \)
-   - \( \frac{d}{dx} e^{ax} = ae^{ax} \)
-   - \( \frac{d}{dx} a^x = a^x \ln a \)
+   $$
+   \frac{d}{dx} e^x = e^x
+   $$
+   $$
+   \frac{d}{dx} e^{ax} = ae^{ax}
+   $$
 
 2. **Logarithmic Functions**:
-   - \( \frac{d}{dx} \ln x = \frac{1}{x} \)
-   - \( \frac{d}{dx} \log_a x = \frac{1}{x \ln a} \)
+   $$
+   \frac{d}{dx} \ln x = \frac{1}{x}
+   $$
+   $$
+   \frac{d}{dx} \log_a x = \frac{1}{x \ln a}
+   $$
 
-### Power Functions
+3. **Power Functions**:
+   $$
+   \frac{d}{dx} x^n = nx^{n-1}
+   $$
 
-- \( \frac{d}{dx} x^n = nx^{n-1} \)
+4. **Trigonometric Functions**:
+   - Basic:
+     $$
+     \frac{d}{dx} \sin x = \cos x
+     $$
+     $$
+     \frac{d}{dx} \cos x = -\sin x
+     $$
+     $$
+     \frac{d}{dx} \tan x = \sec^2 x
+     $$
+   - Reciprocal:
+     $$
+     \frac{d}{dx} \csc x = -\csc x \cot x
+     $$
+     $$
+     \frac{d}{dx} \sec x = \sec x \tan x
+     $$
+     $$
+     \frac{d}{dx} \cot x = -\csc^2 x
+     $$
 
-### Trigonometric Functions
+5. **Inverse Trigonometric Functions**:
+   $$
+   \frac{d}{dx} \sin^{-1} x = \frac{1}{\sqrt{1-x^2}}
+   $$
+   $$
+   \frac{d}{dx} \cos^{-1} x = -\frac{1}{\sqrt{1-x^2}}
+   $$
+   $$
+   \frac{d}{dx} \tan^{-1} x = \frac{1}{1+x^2}
+   $$
 
-1. **Basic Trigonometric Functions**:
-   - \( \frac{d}{dx} \sin x = \cos x \)
-   - \( \frac{d}{dx} \cos x = -\sin x \)
-   - \( \frac{d}{dx} \tan x = \sec^2 x \)
+### Gradient Descent and Backpropagation
 
-2. **Reciprocal Trigonometric Functions**:
-   - \( \frac{d}{dx} \csc x = -\csc x \cot x \)
-   - \( \frac{d}{dx} \sec x = \sec x \tan x \)
-   - \( \frac{d}{dx} \cot x = -\csc^2 x \)
+Gradients are calculated by propagating errors backward through the network, using the chain rule and the derivatives of activation functions. Here’s how the process works:
 
-### Inverse Trigonometric Functions
-
-- \( \frac{d}{dx} \sin^{-1} x = \frac{1}{\sqrt{1-x^2}} \)
-- \( \frac{d}{dx} \cos^{-1} x = -\frac{1}{\sqrt{1-x^2}} \)
-- \( \frac{d}{dx} \tan^{-1} x = \frac{1}{1+x^2} \)
-
----
-
-## Application in Backpropagation
-
-1. **Forward Pass**: Compute the output of each neuron in the network.
-2. **Loss Computation**: Calculate the loss using a suitable loss function (e.g., Mean Squared Error).
+1. **Forward Pass**: Compute the output of each neuron based on the current weights and biases.
+2. **Loss Computation**: Calculate the loss function (e.g., Mean Squared Error or Cross-Entropy Loss).
 3. **Backward Pass**:
-   - Compute the gradient of the loss function with respect to the output.
-   - Use the chain rule to propagate this gradient backward through the network, layer by layer.
-   - Apply the derivative rules to compute gradients accurately.
+   - Compute the gradient of the loss with respect to the output.
+   - Use the chain rule to propagate the gradient backward through the network.
+   - Apply the derivatives of activation functions to calculate the gradients for each weight and bias.
 
-In summary, these derivatives form the building blocks for calculating gradients during backpropagation. Accurate gradient computation is vital for effectively training neural networks and optimizing their performance.
+### Example of Gradient Calculation
+
+Consider a simple network with a single neuron where the activation function is \( \sigma(x) = \frac{1}{1 + e^{-x}} \). The derivative of this sigmoid function is:
+
+$$
+\sigma'(x) = \sigma(x)(1 - \sigma(x))
+$$
+
+If the output of the neuron is \( y \) and the target is \( t \), the gradient of the loss \( L \) with respect to the input \( x \) is:
+
+$$
+\frac{dL}{dx} = \frac{dL}{dy} \cdot \sigma'(x)
+$$
+
+Here, \( \frac{dL}{dy} \) is computed from the loss function, and \( \sigma'(x) \) is the derivative of the activation function.
 
 ---
 
-## Explore Further
+## Conclusion
 
-For practical implementations and visualizations of these derivative rules, check out our [Jupyter Notebook](https://github.com/MHHamdan/your-notebook-link).
+Understanding and applying derivatives correctly is critical for training neural networks. They provide the foundation for gradient-based optimization methods like backpropagation and gradient descent. Mastering these mathematical tools allows for efficient and effective neural network training.
+
+For practical implementations, visit our [Jupyter Notebook](https://github.com/MHHamdan/your-notebook-link).
 
 ---
 
