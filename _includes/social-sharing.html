@@ -1,12 +1,12 @@
 <div class="social-sharing">
   <p>Share this post on:</p>
-  <!-- X (Twitter) -->
-  <a href="https://x.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ site.url | uri_escape }}{{ page.url | uri_escape }}" target="_blank">X</a> |
+  
+  <!-- X (formerly Twitter) -->
+  <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ site.url | url_encode }}{{ page.url | url_encode }}" target="_blank">X</a> |
   
   <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url | uri_escape }}{{ page.url | uri_escape }}" target="_blank">LinkedIn</a> |
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url | url_encode }}{{ page.url | url_encode }}&title={{ page.title | url_encode }}" target="_blank">LinkedIn</a> |
   
   <!-- Reddit -->
-  <a href="https://www.reddit.com/submit?url={{ site.url | uri_escape }}{{ page.url | uri_escape }}&title={{ page.title | uri_escape }}" target="_blank">Reddit</a> 
- 
+  <a href="https://www.reddit.com/submit?url={{ site.url | url_encode }}{{ page.url | url_encode }}&title={{ page.title | url_encode }}" target="_blank">Reddit</a>
 </div>

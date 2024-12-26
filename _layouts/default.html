@@ -2,10 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  
+  
+  
+  
+  
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Link to your custom CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
+  
+  
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ site.description | escape }}{% endif %}">
+  <meta property="og:url" content="{{ page.url | absolute_url | escape }}">
+  <meta property="og:image" content="{% if page.image %}{{ page.image | absolute_url | escape }}{% else %}{{ site.logo | absolute_url | escape }}{% endif %}">
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:site_name" content="{{ site.title | escape }}">
+  
+  
 </head>
 <body>
   <header>
