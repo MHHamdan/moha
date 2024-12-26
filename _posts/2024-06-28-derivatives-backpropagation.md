@@ -123,7 +123,7 @@ Here, \( \frac{dL}{dy} \) is computed from the loss function, and \( \sigma'(x) 
 
 Understanding and applying derivatives correctly is critical for training neural networks. They provide the foundation for gradient-based optimization methods like backpropagation and gradient descent. Mastering these mathematical tools allows for efficient and effective neural network training.
 
-For practical implementations, visit our [Jupyter Notebook](https://github.com/MHHamdan/your-notebook-link).
+For practical implementations, visit our [Jupyter Notebook](https://github.com/MHHamdan/).
 
 ---
 
