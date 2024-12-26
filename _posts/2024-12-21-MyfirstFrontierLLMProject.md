@@ -2,11 +2,9 @@
 layout: post
 title: "Frontier LLM Project"
 date: 2024-12-21 12:00:00 +0000
-categories: [Larage Multimodel Model]
+categories: [Large Multimodal Model]
 tags: [GPT, NLP]
 ---
- 
-
 
 Welcome to my first **LM experiment**!  
 I’m so excited to dive into this and share what I’ve learned so far. This is all about understanding how **Large Language Models (LLMs)** work and how we can start using them effectively. If some of this feels familiar, great! If not, don’t worry—it’ll all make sense soon enough.
@@ -41,6 +39,20 @@ These prompts work together to guide the model, ensuring its responses are **rel
 
 ---
 
+### Mathematical Example (if applicable)
+
+Here is an example of a mathematical equation formatted in Markdown for better readability:
+
+The derivative of a function \( f(x) \) is given by:
+
+\[
+\frac{d}{dx}f(x) = \lim_{{h \to 0}} \frac{f(x+h) - f(x)}{h}
+\]
+
+This equation represents the fundamental definition of differentiation.
+
+---
+
 ### Conclusion
 
 Stay tuned for more insights as I dive deeper into the fascinating world of LLMs and **prompt engineering**!
@@ -58,8 +70,4 @@ Stay tuned for more insights as I dive deeper into the fascinating world of LLMs
   </ul>
 </section>
 
-<div class="social-sharing">
-  <p>Share this post:</p>
-  <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" target="_blank">Share on Twitter</a> |
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}" target="_blank">Share on LinkedIn</a>
-</div>
+{% include social-sharing.html %}
