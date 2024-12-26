@@ -4,8 +4,15 @@
   <!-- X (formerly Twitter) -->
   <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ site.url | url_encode }}{{ page.url | url_encode }}" target="_blank">X</a> |
   
-  <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url | url_encode }}{{ page.url | url_encode }}&title={{ page.title | url_encode }}" target="_blank">LinkedIn</a> |
+  
+  
+  <!-- LinkedIn (new recommended URL) -->
+<a href="https://www.linkedin.com/sharing/share-offsite/?url={{ (site.url | append: page.url) | url_encode }}"
+   target="_blank">
+  LinkedIn
+</a>
+  
+
   
   <!-- Reddit -->
   <a href="https://www.reddit.com/submit?url={{ site.url | url_encode }}{{ page.url | url_encode }}&title={{ page.title | url_encode }}" target="_blank">Reddit</a>
