@@ -41,19 +41,13 @@ These prompts work together to guide the model, ensuring its responses are **rel
 
 ### Mathematical Example (if applicable)
 
-Here is an example of a mathematical equation formatted in Markdown for better readability:
+Here is an example of a mathematical equation formatted for better readability:
 
 The derivative of a function \( f(x) \) is given by:
 
-```markdown
-\[ \frac{d}{dx}f(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h} \]
-```
-
-Rendered as:
-
-\[
+$$
 \frac{d}{dx}f(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
-\]
+$$
 
 This equation represents the fundamental definition of differentiation.
 
