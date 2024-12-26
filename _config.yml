@@ -2,6 +2,7 @@
 theme: minima
 title: "Dr. Mohammed Hamdan's Blog"
 baseurl: "/moha"
+permalink: /:categories/:year/:month/:day/:title/
 url: "https://mhhamdan.github.io"
 
 # Markdown settings
@@ -32,6 +33,8 @@ permalink: /:categories/:year/:month/:day/:title/
 nav_links:
   - title: "Home"
     url: "/moha/"
+  - title: "Blog Posts"
+    url: "/moha/posts.html"
   - title: "Education"
     url: "/moha/education.html"
   - title: "Portfolio"

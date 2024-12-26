@@ -19,7 +19,8 @@ layout: null
     <p>AI &amp; LLM Innovator</p>
     <nav>
       <ul>
-        <li><a href="{{ site.baseurl }}/">Home</a></li>
+        <li><a href="{{ site.baseurl }}/"  aria-label="View Haome page">Home</a></li>
+		<li><a href="{{ site.baseurl }}/posts/" aria-label="View Blog page">Blog Posts</a></li>
         <li><a href="{{ site.baseurl }}/education.html" aria-label="View Education page"> Education</a></li>
         <li><a href="{{ site.baseurl }}/portfolio.html" aria-label="View Portfolio page"> Portfolio</a></li>
         <li><a href="{{ site.baseurl }}/experience.html"  aria-label="View Experience page">Experience</a></li>
@@ -32,19 +33,15 @@ layout: null
     </nav>
   </header>
 
-  <main class="container">
-    <!-- Unique blog post content -->
+  <main>
     <article>
       <h2>{{ page.title }}</h2>
       <p><small><i>{{ page.date | date: "%B %d, %Y" }}</i></small></p>
-      <div>
-        {{ content }}
-      </div>
+      <div>{{ content }}</div>
     </article>
   </main>
-
   <footer>
-    <p>&copy; {{ site.time | date: "%Y" }} Dr. Mohammed Hamdan | Innovating AI &amp; LLMs</p>
+    <p>&copy; {{ site.time | date: "%Y" }} Dr. Mohammed Hamdan</p>
   </footer>
 </body>
 </html>
