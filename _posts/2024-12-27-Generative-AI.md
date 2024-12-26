@@ -67,9 +67,9 @@ L = \frac{1}{n} \sum_{i=1}^n (y_i - \hat{y}_i)^2
 $$
 
 Here:
-- \( y_i \) represents the actual data.
-- \( \hat{y}_i \) is the predicted data.
-- \( n \) is the total number of samples.
+- $$\( y_i \)$$ represents the actual data.
+- $$\( \hat{y}_i \)$$ is the predicted data.
+- $$\( n \)$$ is the total number of samples.
 
 The gradient descent algorithm adjusts model parameters by computing gradients of the loss function with respect to each parameter:
 
@@ -78,8 +78,8 @@ $$
 $$
 
 Where:
-- \( \theta \) is the parameter being updated.
-- \( \eta \) is the learning rate.
+- $$\( \theta \)$$ is the parameter being updated.
+- $$\( \eta \)$$ is the learning rate.
 
 This iterative process helps the model converge towards optimal performance.
 
