@@ -1,83 +1,34 @@
-
-<!--
 <div class="social-sharing">
-  <p>Share this post on:</p>
-  
-  <!-- X (formerly Twitter) -->
-  <!--
-  <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ site.url | url_encode }}{{ page.url | url_encode }}" target="_blank">X</a> |
-  
-  
-  
-  <!-- LinkedIn (new recommended URL) -->
-  
-  <!--
-<a href="https://www.linkedin.com/sharing/share-offsite/?url={{ (site.url | append: page.url) | url_encode }}"
-   target="_blank">
-  LinkedIn
-</a>
-  
-  
- 
+  <h3>Share this post on:</h3>
+  <ul>
+    <!-- X (formerly Twitter) -->
+    <li class="share-x">
+      <a rel="nofollow noopener noreferrer"
+         href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ site.url | url_encode }}{{ page.url | url_encode }}"
+         target="_blank"
+         title="Share on X">
+        X
+      </a>
+    </li>
 
-  
-  <!-- Reddit -->
-  <!--
-  <a href="https://www.reddit.com/submit?url={{ site.url | url_encode }}{{ page.url | url_encode }}&title={{ page.title | url_encode }}" target="_blank">Reddit</a>
-</div>
+    <!-- LinkedIn -->
+    <li class="share-linkedin">
+      <a rel="nofollow noopener noreferrer"
+         href="https://www.linkedin.com/sharing/share-offsite/?url={{ (site.url | append: page.url) | url_encode }}"
+         target="_blank"
+         title="Share on LinkedIn">
+        LinkedIn
+      </a>
+    </li>
 
-
-<div class="sharedaddy sd-sharing-enabled">
-  <!-- Social Sharing -->
-  <div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing">
-    <h3 class="sd-title">Share this:</h3>
-    <div class="sd-content">
-      <ul>
-        <!-- X (formerly Twitter) -->
-        <li class="share-x">
-          <a rel="nofollow noopener noreferrer"
-             class="share-x sd-button share-icon"
-             href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ site.url | url_encode }}{{ page.url | url_encode }}"
-             target="_blank"
-             title="Click to share on X">
-            <span>X</span>
-          </a>
-        </li>
-        
-        <!-- LinkedIn -->
-        <li class="share-linkedin">
-          <a rel="nofollow noopener noreferrer"
-             class="share-linkedin sd-button share-icon"
-             href="https://www.linkedin.com/sharing/share-offsite/?url={{ (site.url | append: page.url) | url_encode }}"
-             target="_blank"
-             title="Click to share on LinkedIn">
-            <span>LinkedIn</span>
-          </a>
-        </li>
-        
-        <!-- Reddit -->
-        <li class="share-reddit">
-          <a rel="nofollow noopener noreferrer"
-             class="share-reddit sd-button share-icon"
-             href="https://www.reddit.com/submit?url={{ site.url | url_encode }}{{ page.url | url_encode }}&title={{ page.title | url_encode }}"
-             target="_blank"
-             title="Click to share on Reddit">
-            <span>Reddit</span>
-          </a>
-        </li>
-        
-        <!-- End marker (some themes include this) -->
-        <li class="share-end"></li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- “Like this:” block (placeholder) -->
-  <div class="sharedaddy sd-block sd-like jetpack-likes-widget-wrapper">
-    <h3 class="sd-title">Like this:</h3>
-    <div class="likes-widget-placeholder post-likes-widget-placeholder" style="height: 55px;">
-      <span class="button"><span>Like</span></span> 
-      <span class="loading">Loading&#8230;</span>
-    </div>
-  </div>
+    <!-- Reddit -->
+    <li class="share-reddit">
+      <a rel="nofollow noopener noreferrer"
+         href="https://www.reddit.com/submit?url={{ site.url | url_encode }}{{ page.url | url_encode }}&title={{ page.title | url_encode }}"
+         target="_blank"
+         title="Share on Reddit">
+        Reddit
+      </a>
+    </li>
+  </ul>
 </div>
