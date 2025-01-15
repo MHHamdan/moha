@@ -1,0 +1,5 @@
+<div class="social-sharing">
+  <p>Share this post:</p>
+  <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" target="_blank">Share on Twitter</a> |
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}" target="_blank">Share on LinkedIn</a>
+</div>
