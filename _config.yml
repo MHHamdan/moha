@@ -22,6 +22,8 @@ kramdown:
 # Future-dated posts handling
 future: true
 
+# Excerpt separator
+excerpt_separator: <!--more-->
 
 # Plugins
 plugins:

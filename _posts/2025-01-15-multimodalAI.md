@@ -17,7 +17,7 @@ tags: [Document Analysis, Multimodal AI, Embeddings, RAG, Neural Networks]
 ## Introduction
 
 The intersection of multimodal AI and document analysis presents fascinating challenges in modern machine learning. This post explores an implementation that demonstrates practical applications of several key theoretical concepts, making them accessible while maintaining technical depth.
-
+<!--more-->
 ## Theoretical Foundations
 
 ### Multimodal Embedding Space
