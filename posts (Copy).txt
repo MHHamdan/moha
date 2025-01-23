@@ -9,9 +9,8 @@ permalink: /posts/
 {% for post in site.posts %}
   <div class="post">
     <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-    <p><small><i>{{ post.date | date: "%B %d, %Y" }}</i></small></p>
+    <p><small><i>{{ post.date | date_to_string }}</i></small></p>
     <p>{{ post.excerpt }}</p>
-    <a href="{{ post.url | relative_url }}">Read More</a>
   </div>
   <hr>
 {% endfor %}
